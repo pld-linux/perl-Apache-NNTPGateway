@@ -42,10 +42,10 @@ newsowych w przestrzeni WWW.
 
 %prep
 %setup -q -n %{pnam}-%{version}
-perl -pi -e 's/^(require 5.005)(02;)$/$1_$2/' NNTPGateway.pm
+%{__perl} -pi -e 's/^(require 5.005)(02;)$/$1_$2/' NNTPGateway.pm
 
 %build
-perl Makefile.PL
+%{__perl} Makefile.PL
 %{__make}
 
 %{!?_without_tests:%{__make} test}
