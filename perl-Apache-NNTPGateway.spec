@@ -10,7 +10,8 @@ Summary(pl):	Apache::NNTPGateway - interfejs NNTP dla serwera WWW Apache z mod_p
 Name:		perl-Apache-NNTPGateway
 Version:	0.9
 Release:	5
-License:	GPL/Artistic
+# sae as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	b14703a19ed3c8a763d865a46b6116b5
