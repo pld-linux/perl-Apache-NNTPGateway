@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Apache
-%define	pnam	NNTPGateway
+%define		pdir	Apache
+%define		pnam	NNTPGateway
 Summary:	Apache::NNTPGateway - A NNTP interface for mod_perl enabled Apache web server
 Summary(pl):	Apache::NNTPGateway - interfejs NNTP dla serwera WWW Apache z mod_perlem
 Name:		perl-Apache-NNTPGateway
