@@ -3,13 +3,13 @@
 # _without_tests - do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Apache
-%define	pnam	NNTPGateway
+%define		pdir	Apache
+%define		pnam	NNTPGateway
 Summary:	Apache::NNTPGateway - A NNTP interface for mod_perl enabled Apache web server
 Summary(pl):	Apache::NNTPGateway - interfejs NNTP dla serwera WWW Apache z mod_perlem
 Name:		perl-Apache-NNTPGateway
 Version:	0.9
-Release:	2
+Release:	3
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -42,6 +42,7 @@ newsowych w przestrzeni WWW.
 
 %prep
 %setup -q -n %{pnam}-%{version}
+perl -pi -e 's/^(require 5.005)(02;)$/$1_$2/' NNTPGateway.pm
 
 %build
 perl Makefile.PL
