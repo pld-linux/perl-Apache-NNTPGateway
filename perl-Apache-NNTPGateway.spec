@@ -6,7 +6,7 @@
 %define		pdir	Apache
 %define		pnam	NNTPGateway
 Summary:	Apache::NNTPGateway - A NNTP interface for mod_perl enabled Apache web server
-Summary(pl):	Apache::NNTPGateway - interfejs NNTP dla serwera WWW Apache z mod_perlem
+Summary(pl.UTF-8):   Apache::NNTPGateway - interfejs NNTP dla serwera WWW Apache z mod_perlem
 Name:		perl-Apache-NNTPGateway
 Version:	0.9
 Release:	6
@@ -34,12 +34,12 @@ not a replacement for a real powerful newsreader client but just
 pretend to be a simple, useful mapping of some news articles into a
 web space.
 
-%description -l pl
-Ten modu³ jest implementacj± interfejsu do usenetowych grup
-dyskusyjnych (NNTP). Pozwala u¿ytkownikom przegl±daæ, czytaæ, wysy³aæ,
-odpowiadaæ... na artyku³y z podanej grupy i serwera, w zale¿no¶ci od
-konfiguracji. Nie jest to zamiennik klienta newsów z prawdziwego
-zdarzenia, ale ma byæ prostym, u¿ytecznym odwzorowaniem artyku³ów
+%description -l pl.UTF-8
+Ten moduÅ‚ jest implementacjÄ… interfejsu do usenetowych grup
+dyskusyjnych (NNTP). Pozwala uÅ¼ytkownikom przeglÄ…daÄ‡, czytaÄ‡, wysyÅ‚aÄ‡,
+odpowiadaÄ‡... na artykuÅ‚y z podanej grupy i serwera, w zaleÅ¼noÅ›ci od
+konfiguracji. Nie jest to zamiennik klienta newsÃ³w z prawdziwego
+zdarzenia, ale ma byÄ‡ prostym, uÅ¼ytecznym odwzorowaniem artykuÅ‚Ã³w
 newsowych w przestrzeni WWW.
 
 %prep
