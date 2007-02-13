@@ -6,7 +6,7 @@
 %define		pdir	Apache
 %define		pnam	NNTPGateway
 Summary:	Apache::NNTPGateway - A NNTP interface for mod_perl enabled Apache web server
-Summary(pl.UTF-8):   Apache::NNTPGateway - interfejs NNTP dla serwera WWW Apache z mod_perlem
+Summary(pl.UTF-8):	Apache::NNTPGateway - interfejs NNTP dla serwera WWW Apache z mod_perlem
 Name:		perl-Apache-NNTPGateway
 Version:	0.9
 Release:	6
