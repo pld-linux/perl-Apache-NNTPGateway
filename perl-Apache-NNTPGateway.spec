@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	Apache
 %define		pnam	NNTPGateway
+%include	/usr/lib/rpm/macros.perl
 Summary:	Apache::NNTPGateway - A NNTP interface for mod_perl enabled Apache web server
 Summary(pl.UTF-8):	Apache::NNTPGateway - interfejs NNTP dla serwera WWW Apache z mod_perlem
 Name:		perl-Apache-NNTPGateway
@@ -15,13 +15,14 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	b14703a19ed3c8a763d865a46b6116b5
+URL:		http://search.cpan.org/dist/Apache-NNTPGateway/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 3.0.3-26
 %if %{with tests}
 BuildRequires:	apache1-mod_perl >= 1.20
 BuildRequires:	perl-CGI >= 1.10
-BuildRequires:	perl-libnet
 BuildRequires:	perl-MailTools >= 1.10
+BuildRequires:	perl-libnet
 %endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
